@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>DNS</title>
+    <link href="/2022/03/30/DNS/"/>
+    <url>/2022/03/30/DNS/</url>
+    
+    <content type="html"><![CDATA[<h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>Domain Name Server 域名服务器</p><h2 id="DNS-的作用"><a href="#DNS-的作用" class="headerlink" title="DNS 的作用"></a>DNS 的作用</h2><p>DNS负责记录IP地址与域名的对应关系。<br>将域名解析成IP地址，方便主机之间通过IP地址来传输数据包。</p><h2 id="正向解析"><a href="#正向解析" class="headerlink" title="正向解析"></a>正向解析</h2><p>输入域名，得到IP（网络传输底层需要解析成IP地址）</p><h2 id="反向解析"><a href="#反向解析" class="headerlink" title="反向解析"></a>反向解析</h2><p>输入IP，得到域名。<br>没有注册过合法域名的、没有向ISP申请IP反向解析的邮件发送者，一般会被邮件服务器&#x2F;邮件网关的“反垃圾邮件功能”判断为垃圾邮件。<br>没有向ISP申请做反向解析的IP地址，通常会被ISP以xxx.dynamic.xxx之类的主机名来管理<br>邮件网关会根据邮件头中发送方的IP地址，去做反向解析，如果解析到的域名与邮件头中的邮件域不一致，邮件就会被拦截。</p><blockquote><p>比如你用  <a href="mailto:&#120;&#120;&#120;&#64;&#x6e;&#x61;&#x6d;&#x65;&#46;&#x63;&#x6f;&#x6d;">&#120;&#120;&#120;&#64;&#x6e;&#x61;&#x6d;&#x65;&#46;&#x63;&#x6f;&#x6d;</a> 这个邮箱给我的邮箱  <a href="mailto:&#x31;&#50;&#51;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#109;">&#x31;&#50;&#51;&#x40;&#49;&#54;&#51;&#x2e;&#x63;&#111;&#109;</a> 发了一封信。163邮件服务器接到这封信会查看这封信的信头文件，这封信的信头文件会显示这封信是由哪个IP地址发出来的。然后根据这个IP地址进行反向解析，如果反向解析到这个IP所对应的域名是name.com 那么就接受这封邮件，如果反向解析发现这个IP没有对应到name.com，那么就拒绝这封邮件。</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>DNS 学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>DNS</tag>
+      
+      <tag>网络基础</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>未来的畅想</title>
     <link href="/2022/03/20/%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%95%85%E6%83%B3/"/>
     <url>/2022/03/20/%E6%9C%AA%E6%9D%A5%E7%9A%84%E7%95%85%E6%83%B3/</url>
